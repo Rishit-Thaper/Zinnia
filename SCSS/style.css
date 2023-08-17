@@ -507,18 +507,20 @@ header .button #menu {
   color: #836b35;
   font-size: 3rem;
 }
-.menu-section .dishes-grid {
+.menu-section .dishes-bg {
   background-image: url("../Rest/bg-banner-2.png");
   background-size: cover;
+}
+.menu-section .dishes-bg .dishes-grid {
   padding: 3rem;
   text-align: center;
 }
 @media screen and (max-width: 960px) {
-  .menu-section .dishes-grid {
+  .menu-section .dishes-bg .dishes-grid {
     padding: 2.5rem;
   }
 }
-.menu-section .dishes-grid h5 {
+.menu-section .dishes-bg .dishes-grid h5 {
   font-family: Lora;
   font-weight: 300;
   color: #271414;
@@ -526,26 +528,26 @@ header .button #menu {
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 480px) {
-  .menu-section .dishes-grid h5 {
+  .menu-section .dishes-bg .dishes-grid h5 {
     font-size: 2rem;
   }
 }
-.menu-section .dishes {
+.menu-section .dishes-bg .dishes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 @media screen and (max-width: 960px) {
-  .menu-section .dishes {
+  .menu-section .dishes-bg .dishes {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 768px) {
-  .menu-section .dishes {
+  .menu-section .dishes-bg .dishes {
     grid-template-columns: 1fr;
   }
 }
-.menu-section .dishes img {
+.menu-section .dishes-bg .dishes img {
   width: 100%;
   padding: 1rem;
   height: auto;
