@@ -37,6 +37,9 @@ header .nav-menu a:hover {
   color: #80683a;
 }
 @media screen and (max-width: 960px) {
+  header .nav-menu a {
+    font-size: 20px;
+  }
   header .nav-menu a:hover {
     color: #932325;
   }
