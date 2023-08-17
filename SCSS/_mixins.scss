@@ -1,0 +1,23 @@
+@mixin commonButton($pad1, $pad2, $bgColor){
+    background-color: $bgColor;
+    padding: $pad1 $pad2;
+    border-radius: 5px;
+    border: none;
+    transition: ease-in-out 0.3s;
+    &:hover{
+        cursor: pointer;
+        background-color: darken($bgColor, 10%);
+    }
+}
+
+@mixin commonLayout(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin commonPhone(){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

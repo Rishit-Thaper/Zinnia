@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SCSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Zinnia - Abstract Dining</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="#"><img src="Rest/logo.png" alt="logo"></a>
+
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-section">About Us</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+
+        <div class="button">
+            <a href="#"><button>Contact Us</button></a>
+            <div class="fa-solid fa-bars" onclick="toggleMenu()" id="menu"></div>
+        </div>
+
+    </header>
+
+    <section class="home">
+        
+        <div class="image-container">
+            <div class="overlay"></div>
+            <div class="overlay-text">
+                <h1 class="animate__animated animate__fadeInUp">Zinnia</h1>
+                <h4 class="animate__animated animate__fadeInUp">An odessy, where flavours come alive</h4>
+                <!-- <p id="home-tagline">An odessy, where flavours come alive</p> -->
+            </div>
+          </div>
+        
+    </section>
+
+    <section class="about-section" id="about-section">
+        
+        <div class="about-grid">
+            
+            <div class="about-text">
+                <h2>Namaste <br><span>Chandigarh🙏</span></h2>
+                <h3>"Zinnia" symbolizes tenderness and love. <br></h3>
+                <p>Crafting unforgettable dining with rich traditions and modern innovation. Every dish harmonizes flavors, local customs, and seasonal produce for an exquisite experience.</p>
+            </div>
+            <div class="about-image">
+                <img src="compressed/image-4.jpg" alt="about">
+            </div>
+            <div class="about-image">
+                <img src="compressed/image-6.jpg" alt="about">
+            </div>
+        </div>
+    
+    </section>
+    
+    <section class="feature-section">
+        <div class="main-grid">
+            <h5>"Indulge in Exquisite Creations and Warm Hospitality"</h5>
+            <div class="feature-grid">
+                <div class="feature">
+                    <img src="Rest/chef.png" alt="">
+                    <h3>Culinary Masterpieces</h3>
+                    <p>Exquisite dishes crafted to perfection.</p>
+                </div>
+                <div class="feature">
+                    <img src="Rest/fusion.png" alt="">
+                    <h3>Flavor Fusion</h3>
+                    <p>Traditon meets innovation.</p>
+                </div>
+                <div class="feature">
+                    <img src="Rest/team.png" alt="">
+                    <h3>Embrace Hospitality</h3>
+                    <p>Our Dedicated Team's Warm Welcome</p>
+                </div>
+                <div class="feature">
+                    <img src="Rest/zinnia.png" alt="">
+                    <h3>Zinnia Experience</h3>
+                    <p>Immerse yourself in the Zinnia.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="interior-section">
+        <div class="interior-grid">
+            <h5>Elegance Within: Our Captivating Interior</h5>
+            <p>Crafting the perfect ambiance for your dining experience</p>
+            <div class="interior-img">
+                <img src="compressed/image-3.jpg" alt="image-1">
+                <img src="compressed/image-1.jpg" alt="image-2">
+                <img src="compressed/image-6.jpg" alt="image-3">
+                <img src="compressed/image-18.jpg" alt="image-4">
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        
+        <div class="menu">
+            
+            <div class="menu-grid">
+            
+                <div class="menu-text">
+                    <h5>Culinary Artistry: Our Exquisite Dishes</h5>
+                    <p>Our menu is crafted to perfection, with a wide variety of dishes to choose from.</p>
+                    <a href="#"><button>Discover Our Delights</button></a>
+                </div>
+                
+                <div class="menu-categories">
+                    <div class="category">
+                        <p><i class="fa-solid fa-utensils"></i></p>
+                        <h6>Appetizers</h6>
+                    </div>
+                    <div class="category">
+                        <p><i class="fa-solid fa-bowl-food"></i></p>
+                        <h6>Main Course</h6>
+                    </div>
+                    <div class="category">
+                        <p><i class="fa-solid fa-martini-glass"></i></p>
+                        <h6>Drinks</h6>
+                    </div>
+                    <div class="category">
+                        <p><i class="fa-solid fa-ice-cream"></i></p>
+                        <h6>Desserts</h6>
+                    </div>
+                </div>
+            
+            </div>
+            
+        </div>
+        <div class="dishes-grid">
+            <h5>Experience gastronomy at its finest</h5>
+            <div class="dishes">
+                <img src="compressed/image-17.jpg" alt="">
+                <img src="compressed/image-15.jpg" alt="">
+                <img src="compressed/image-13.jpg" alt="">
+                <img src="compressed/image-10.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact-us">
+        <div class="footer-grid">
+            <div class="contact-info">
+                <h5>Contact</h5>
+                <p><i class="las la-phone-volume"></i><span>+91-83590 03000</span></p>
+                <p><i class="las la-envelope"></i><span>info@zinnia.restaurant</span></p>
+            </div>
+    
+            <div class="contact-info">
+                <h5>Our Social handles</h5>
+                <a href="#"><i class="lab la-facebook"></i><span>Facebook</span></a><br>
+                <a href="#"><i class="lab la-instagram"></i><span>Instagram</span></a>
+
+            </div>
+    
+            <div class="contact-info">
+                <h5><i class="las la-map-marker-alt"></i><span>Zinnia-Abstract Dining</span></h5>
+                <p>1st and 2nd floor, SCS 23 Sector 10D, Chandigarh</p>
+            </div>
+        </div>
+        
+    
+    </footer>
+    <div class="container">
+        <p>Copyright © 2023 zinnia.restaurant All rights reserved</p>
+    </div>
+
+
+</body>
+<script src="JS/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+</html>
