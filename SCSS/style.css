@@ -172,10 +172,13 @@ header .button #menu {
   color: white;
 }
 .home .overlay-text h1 {
-  font-family: Work Sans;
+  font-family: "Times New Roman", Times, serif;
   font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: 10px;
 }
 .home .overlay-text h4 {
+  font-family: Lora;
   font-size: 1.2rem;
   font-weight: 300;
 }
@@ -510,90 +513,65 @@ header .button #menu {
   color: #836b35;
   font-size: 3rem;
 }
-.menu-section .dishes-bg {
+
+.menu-pdf {
   background-image: url("../Rest/bg-banner-2.png");
   background-size: cover;
-}
-.menu-section .dishes-bg .dishes-grid {
   padding: 3rem;
-  text-align: center;
-}
-@media screen and (max-width: 960px) {
-  .menu-section .dishes-bg .dishes-grid {
-    padding: 2.5rem;
-  }
-}
-.menu-section .dishes-bg .dishes-grid h5 {
-  font-family: Lora;
-  font-weight: 300;
-  color: #271414;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-@media screen and (max-width: 480px) {
-  .menu-section .dishes-bg .dishes-grid h5 {
-    font-size: 2rem;
-  }
-}
-.menu-section .dishes-bg .dishes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-@media screen and (max-width: 960px) {
-  .menu-section .dishes-bg .dishes {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 @media screen and (max-width: 768px) {
-  .menu-section .dishes-bg .dishes {
+  .menu-pdf {
+    padding: 2rem;
+  }
+}
+.menu-pdf .drink-dishes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 1140px) {
+  .menu-pdf .drink-dishes {
     grid-template-columns: 1fr;
   }
 }
-.menu-section .dishes-bg .dishes img {
+.menu-pdf .drink-dishes .menus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .menu-pdf .drink-dishes .menus {
+    grid-template-columns: 1fr;
+  }
+}
+.menu-pdf .drink-dishes .menus img {
   width: 100%;
   padding: 1rem;
-  height: auto;
 }
-
-.footer-section {
-  padding: 2rem;
-}
-.footer-section p {
-  text-align: center;
-  color: #271414;
-}
-.footer-section .footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center;
-  gap: 25px;
-}
-.footer-section .footer-grid .footer-menu h5, .footer-section .footer-grid .footer-contact h5 {
-  font-size: 1.3rem;
-  color: #271414;
-}
-.footer-section .footer-grid .footer-menu ul, .footer-section .footer-grid .footer-contact ul {
-  margin-top: 1rem;
-  list-style: none;
-}
-.footer-section .footer-grid .footer-menu li, .footer-section .footer-grid .footer-contact li {
-  margin-bottom: 1rem;
-}
-.footer-section .footer-grid .footer-menu li a, .footer-section .footer-grid .footer-contact li a {
-  text-decoration: none;
+.menu-pdf .drink-dishes .menus h5 {
+  padding: 1rem;
   color: #44261e;
+  font-size: 2.5rem;
+  font-family: Work sans;
+}
+.menu-pdf .drink-dishes .menus p {
+  padding-left: 1rem;
+}
+.menu-pdf .drink-dishes .menus button {
+  background-color: #44261e;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
   transition: ease-in-out 0.3s;
+  background: none;
+  border: 1px solid #44261e;
+  margin: 1rem;
+  font-size: 1rem;
 }
-.footer-section .footer-grid .footer-menu li a:hover, .footer-section .footer-grid .footer-contact li a:hover {
-  color: #271414;
+.menu-pdf .drink-dishes .menus button:hover {
+  cursor: pointer;
+  background-color: #21120e;
 }
-@media screen and (max-width: 768px) {
-  .footer-section .footer-grid {
-    grid-template-columns: 1fr;
-    justify-items: left;
-  }
+.menu-pdf .drink-dishes .menus button:hover {
+  color: #FFF0DA;
 }
 
 footer {
