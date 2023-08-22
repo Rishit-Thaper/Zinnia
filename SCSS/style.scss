@@ -546,3 +546,83 @@ footer{
     color: $color-5;
     padding: 1.5rem;
 }
+
+//gallery-page
+
+.gallery-home{
+    background-image: url('../compressed/image-4.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.758); /* Adjust opacity as needed */
+    }
+    .overlay-text{
+        text-align: center;
+        h1{
+            font-size: 3rem;
+            font-family: lora;
+            font-weight: 300;
+            color: $color-2;
+            padding: 1rem;
+
+            @include md{
+                font-size: 1.5rem;
+                padding: .5rem;
+            }
+        }
+        h4{
+            font-size: 1.5rem;
+            font-weight: 300;
+            font-family: Lora;
+            color: $color-2;
+            padding: 1rem;
+
+            @include md{
+                font-size: 1rem;
+                padding: .5rem;
+            }
+        }
+    }
+}
+.pictures-grid{
+    padding: 4rem 3rem;
+    background-image: url('../Rest/bg-banner-2.png');
+    h2{
+        text-align: center;
+        font-family: lora;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        color: $color-3;
+        @include md{
+            font-size: 1.3rem;
+        }
+    }
+    .sub-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        img{
+            width: 100%;
+            padding: 2rem;
+        }
+        @include lg{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include sm{
+            grid-template-columns: 1fr;
+        }
+    }
+    @include sm{
+        padding: 1.5rem;
+    }
+}

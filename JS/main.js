@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     }
+    
 
 function debounce(func, wait) {
   let timeout;
@@ -34,7 +35,9 @@ function debounce(func, wait) {
 const debouncedUpdateNavbarBackground = debounce(updateNavbarBackground, 10);
     window.addEventListener("scroll", debouncedUpdateNavbarBackground);
 });
-  
+
+
+
   
 //Function to make Navbar Responsive
 function toggleMenu() {
@@ -88,7 +91,7 @@ const aboutSection = document.querySelectorAll('.about-section');
 const featureSection = document.querySelectorAll('.main-grid');
 const menuSection = document.querySelectorAll('.menu-grid');
 const interiorSection = document.querySelectorAll('.interior-grid');
-const dishesSection = document.querySelectorAll('.dishes-grid');
+const dishesSection = document.querySelectorAll('.drink-dishes');
 
 animateOnScroll(aboutSection);
 animateOnScroll(featureSection);

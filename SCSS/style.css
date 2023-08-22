@@ -616,4 +616,93 @@ footer .footer-grid .contact-info i {
   text-align: center;
   color: #FFF0DA;
   padding: 1.5rem;
+}
+
+.gallery-home {
+  background-image: url("../compressed/image-4.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.758); /* Adjust opacity as needed */
+}
+.gallery-home .overlay-text {
+  text-align: center;
+}
+.gallery-home .overlay-text h1 {
+  font-size: 3rem;
+  font-family: lora;
+  font-weight: 300;
+  color: #f3f3f3;
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .gallery-home .overlay-text h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+.gallery-home .overlay-text h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: Lora;
+  color: #f3f3f3;
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .gallery-home .overlay-text h4 {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+.pictures-grid {
+  padding: 4rem 3rem;
+  background-image: url("../Rest/bg-banner-2.png");
+}
+.pictures-grid h2 {
+  text-align: center;
+  font-family: lora;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #44261e;
+}
+@media screen and (max-width: 768px) {
+  .pictures-grid h2 {
+    font-size: 1.3rem;
+  }
+}
+.pictures-grid .sub-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.pictures-grid .sub-grid img {
+  width: 100%;
+  padding: 2rem;
+}
+@media screen and (max-width: 960px) {
+  .pictures-grid .sub-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .pictures-grid .sub-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pictures-grid {
+    padding: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
