@@ -37,11 +37,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 //Function to make Navbar Responsive
-function toggleMenu() {
+document.addEventListener("click", function (event) {
+  var navMenu = document.querySelector(".nav-menu");
+  var toggleButton = document.querySelector(".toggle-button");
 
-    console.log("clicked")
-    var navMenu = document.querySelector(".nav-menu");
-  
+  if (
+    !navMenu.contains(event.target) &&
+    event.target !== toggleButton
+  ) {
+    if (navMenu.classList.contains("active")) {
+      navMenu.classList.remove("active");
+      navMenu.style.transform = "translateY(-200px)";
+    }
+  } else if (event.target === toggleButton) {
     if (navMenu.classList.contains("active")) {
       navMenu.classList.remove("active");
       navMenu.style.transform = "translateY(-200px)";
@@ -50,7 +58,7 @@ function toggleMenu() {
       navMenu.style.transform = "translateY(0)";
     }
   }
-  
+});
 
   function animateOnScrollRight(elements) {
     const observer = new IntersectionObserver((entries, observer) => {

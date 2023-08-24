@@ -40,19 +40,30 @@ const debouncedUpdateNavbarBackground = debounce(updateNavbarBackground, 10);
 
   
 //Function to make Navbar Responsive
-function toggleMenu() {
 
-  console.log("clicked")
+// Add a click event listener to the document
+document.addEventListener("click", function (event) {
   var navMenu = document.querySelector(".nav-menu");
+  var toggleButton = document.querySelector(".toggle-button");
 
-  if (navMenu.classList.contains("active")) {
-    navMenu.classList.remove("active");
-    navMenu.style.transform = "translateY(-200px)";
-  } else {
-    navMenu.classList.add("active");
-    navMenu.style.transform = "translateY(0)";
+  if (
+    !navMenu.contains(event.target) &&
+    event.target !== toggleButton
+  ) {
+    if (navMenu.classList.contains("active")) {
+      navMenu.classList.remove("active");
+      navMenu.style.transform = "translateY(-200px)";
+    }
+  } else if (event.target === toggleButton) {
+    if (navMenu.classList.contains("active")) {
+      navMenu.classList.remove("active");
+      navMenu.style.transform = "translateY(-200px)";
+    } else {
+      navMenu.classList.add("active");
+      navMenu.style.transform = "translateY(0)";
+    }
   }
-}
+});
 
 //Function to make Image Slideshow
 
