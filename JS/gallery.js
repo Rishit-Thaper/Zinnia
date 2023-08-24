@@ -46,14 +46,35 @@ document.addEventListener("click", function (event) {
 
   if (isToggleButton || (isMenuActive && !navMenu.contains(event.target))) {
     if (isMenuActive) {
-      navMenu.classList.remove("active");
-      navMenu.style.transform = "translateY(-200px)";
+      closeNavMenu();
     } else {
-      navMenu.classList.add("active");
-      navMenu.style.transform = "translateY(0)";
+      openNavMenu();
     }
   }
 });
+
+// Function to close the navigation menu
+function closeNavMenu() {
+  var navMenu = document.querySelector(".nav-menu");
+  navMenu.classList.remove("active");
+  navMenu.style.transform = "translateY(-200px)";
+}
+
+// Function to open the navigation menu
+function openNavMenu() {
+  var navMenu = document.querySelector(".nav-menu");
+  navMenu.classList.add("active");
+  navMenu.style.transform = "translateY(0)";
+}
+
+window.addEventListener("scroll", function () {
+  var isMenuActive = document.querySelector(".nav-menu").classList.contains("active");
+  
+  if (isMenuActive) {
+    closeNavMenu();
+  }
+});
+
 
   function animateOnScrollRight(elements) {
     const observer = new IntersectionObserver((entries, observer) => {
