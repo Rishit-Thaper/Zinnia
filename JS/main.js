@@ -40,22 +40,15 @@ const debouncedUpdateNavbarBackground = debounce(updateNavbarBackground, 10);
 
   
 //Function to make Navbar Responsive
-
-// Add a click event listener to the document
 document.addEventListener("click", function (event) {
   var navMenu = document.querySelector(".nav-menu");
   var toggleButton = document.querySelector(".toggle-button");
 
-  if (
-    !navMenu.contains(event.target) &&
-    event.target !== toggleButton
-  ) {
-    if (navMenu.classList.contains("active")) {
-      navMenu.classList.remove("active");
-      navMenu.style.transform = "translateY(-200px)";
-    }
-  } else if (event.target === toggleButton) {
-    if (navMenu.classList.contains("active")) {
+  var isToggleButton = event.target === toggleButton;
+  var isMenuActive = navMenu.classList.contains("active");
+
+  if (isToggleButton || (isMenuActive && !navMenu.contains(event.target))) {
+    if (isMenuActive) {
       navMenu.classList.remove("active");
       navMenu.style.transform = "translateY(-200px)";
     } else {
